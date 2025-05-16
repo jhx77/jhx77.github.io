@@ -1,16 +1,18 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![我的github主页](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/jhx77)
 
-He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
+Hello！朋友们大家好，我是江宏鑫。欢迎来到我的个人网站。
+In the future 我会陆续更新我生活中的Interesting moments, study records, 以及 some of my thoughts and ideas on my website！
+敬请期待！！！
 
 #### Email
-sli[at]cumt.edu.cn
+国外：hongxinj91@gmail.com
+国内：hongxinjiang@qq.com
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025 (expected).\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+浙江杭州某大学 study ing。。。。
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Keep Learning
 
