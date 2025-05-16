@@ -5,7 +5,7 @@
 ![Jiang's GitHub stats](https://github-readme-stats.vercel.app/api?username=jhx77&show_icons=true&theme=radical)
 --
 
-## 👋 Hello朋友们, 欢迎来到我的个人网站！
+#### 👋 Hello朋友们, 欢迎来到我的个人网站！
 我是江宏鑫！
 In the future, I will keep updating this site with interesting moments from my life and studies. 
 敬请期待！
@@ -30,6 +30,6 @@ In the future, I will keep updating this site with interesting moments from my l
 - Python 数据分析与可视化
 - 永远在学习中……Keep Learning 📚
 
-### ✨ 感谢你的到来！
+#### ✨ 感谢你的到来！
 
 如果你愿意与我交流、合作、甚至只是唠唠嗑——欢迎随时邮件联系！
