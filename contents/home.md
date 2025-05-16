@@ -1,13 +1,13 @@
 <!-- 顶部头像介绍块 -->
 
-<h1 style="text-align: center; font-size: 2.2rem; color: #333; margin-top: -40px; margin-bottom: 0.5rem;">
-  👋Hello！我是 <strong style="color:#2937f0;">江宏鑫</strong>  
-   🤩欢迎朋友们来到我的个人网站！！！🤩
+<h1 style="text-align: center; font-size: 2.2rem; color: #333; margin-top: -30px; margin-bottom: 0.5rem;">
+👋Hello！我是 <strong style="color:#2937f0;">江宏鑫</strong><br>
 </h1>
 
 
 <p style="text-align: center; font-size: 1.1rem; color: #666;">
-  在这里我会不定期记录我的生活、思考与学习内容，希望你能感受到成长的脚步～ 🚀  
+  🤩欢迎朋友们来到我的个人网站！！！🤩<br>
+  在这里我会不定期记录我的生活、思考与学习内容，希望你能感受到成长的脚步～ 🚀<br>
   敬请期待！！！
 </p>
 
