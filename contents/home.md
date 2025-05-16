@@ -1,33 +1,26 @@
 <!-- 顶部头像介绍块 -->
-<p align="center">
-  <img src="static/assets/img/photo.png" width="120px" style="border-radius: 50%; box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 1rem;" />
-</p>
 
-<h1 style="text-align: center; font-size: 2.2rem; color: #333; margin-bottom: 0.5rem;">
-  👋 你好，我是 <strong style="color:#2937f0;">江宏鑫</strong>
+<h1 style="text-align: center; font-size: 2.2rem; color: #333; margin-top: -40px; margin-bottom: 0.5rem;">
+  👋Hello！我是 <strong style="color:#2937f0;">江宏鑫</strong>  
+   🤩欢迎朋友们来到我的个人网站！！！🤩
 </h1>
 
+
 <p style="text-align: center; font-size: 1.1rem; color: #666;">
-  IOT 学生 / Java 后端开发 / 正在建设个人作品站 🚀
+  在这里我会不定期记录我的生活、思考与学习内容，希望你能感受到成长的脚步～ 🚀  
+  敬请期待！！！
 </p>
 
 
 
 <!-- 分割线后是正文内容模块 -->
-### 🧭 欢迎访问我的个人站！
-
-在这里我会不定期记录我的生活、思考与学习内容，希望你能感受到成长的脚步～
+### 🧭About Me：
 
 [![我的github主页](https://img.shields.io/badge/我的github主页-github-blue?logo=github)](https://github.com/jhx77)
 ----
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=jhx77&show_icons=true&theme=radical&border_radius=15" />
 </p>
-
-
-----
-
-敬请期待！
 
 ----
 
