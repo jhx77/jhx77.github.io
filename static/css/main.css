@@ -113,11 +113,11 @@ section .main-body {
 
 .content-card {
   background: white;
-  padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   margin: 2rem auto;
-  max-width: 900px;
+  max-width: 1100px;
+  padding: 2.5rem 3rem;
 }
 
 body {
@@ -125,3 +125,15 @@ body {
   font-family: "Kanit", "Mulish", sans-serif;
 }
 
+.main-body {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.main-body h1, .main-body h2 {
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  color: #2937f0;
+}
