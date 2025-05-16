@@ -28,6 +28,17 @@
     <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
     <link type="text/css" href="static/css/main.css" rel="stylesheet" />
 
+    <style>
+    .content {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      max-width: 800px;
+      margin: 3rem auto;
+    }
+    </style>
+
     <!-- Bootstrap core JS-->
     <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
 
@@ -115,13 +126,11 @@
     </section>
     <!-- Top Section -->
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
+   <!-- Avatar -->
+    <div class="container px-5 text-center my-4">
+       <img src="static/assets/img/photo.png" style="width: 150px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     </div>
-    <!-- Photo -->
+   <!-- Avatar -->
     
     <!-- Home -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
@@ -130,7 +139,7 @@
                 <h2 id="home-subtitle"> </h2>
                 <!-- <span class="bi bi-list"></span> -->
             </header>
-            <div class="main-body" id="home-md"></div>
+            <div class="main-body content-card" id="home-md"></div>
         </div>
     </section>
     <!-- Home -->
@@ -141,7 +150,7 @@
             <header>
                 <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
             </header>
-            <div class="main-body" id="publications-md"></div>
+            <div class="main-body content-card" id="publications-md"></div>
 
         </div>
     </section>
@@ -153,7 +162,7 @@
             <header>
                 <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
             </header>
-            <div class="main-body" id="awards-md"></div>
+            <div class="main-body content-card" id="awards-md"></div>
 
         </div>
     </section>

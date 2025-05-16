@@ -48,11 +48,13 @@ section header h2{
     line-height: 4rem;
 }
 
-section .main-body{
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 2.4rem;
+section .main-body {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+    color: #333;
 }
+
 
 
 .bg-gradient-primary-to-secondary-light {
@@ -107,6 +109,15 @@ section .main-body{
     #avatar {
         margin: 0;
     }
+}
+
+.content-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin: 2rem auto;
+  max-width: 900px;
 }
 
 
