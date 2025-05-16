@@ -120,4 +120,8 @@ section .main-body {
   max-width: 900px;
 }
 
+body {
+  background: linear-gradient(to bottom, #f0f2f5, #ffffff);
+  font-family: "Kanit", "Mulish", sans-serif;
+}
 
