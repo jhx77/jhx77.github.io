@@ -136,3 +136,28 @@ body {
 .avatar-img:hover{
   transform:translateY(-50%) scale(1.06) rotate(3deg);
 }
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid orange;
+  animation: typing 2.5s steps(20, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+footer a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #000;
+  text-decoration: underline;
+}

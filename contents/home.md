@@ -1,8 +1,10 @@
 <!-- 顶部头像介绍块 -->
 
-<h1 style="text-align: center; font-size: 2.2rem; color: #333; margin-top: -30px; margin-bottom: 0.5rem;">
-👋Hello！我是 <strong style="color:#2937f0;">江宏鑫</strong><br>
+<h1 id="hello-title" class="typewriter"
+    style="text-align: center; font-size: 2.2rem; color: #333; margin-top: -100px; margin-bottom: 0.5rem;">
+  👋Hello, 我是 <strong style="color:#2937f0;">江宏鑫</strong>
 </h1>
+
 
 
 <p style="text-align: center; font-size: 1.1rem; color: #666;">
@@ -14,7 +16,7 @@
 
 
 <!-- 分割线后是正文内容模块 -->
-### 🧭About Me：
+### 📌About Me：
 
 [![我的github主页](https://img.shields.io/badge/我的github主页-github-blue?logo=github)](https://github.com/jhx77)
 ----
@@ -25,15 +27,19 @@
 ----
 
 #### 📬 Email
-- 🇨🇳  国内邮箱：hongxinjiang@qq.com  
-- 🌏 海外邮箱：hongxinj91@gmail.com  
+- 🇨🇳  国内邮箱：  
+    hongxinjiang@qq.com  
+- 🌏 海外邮箱：  
+    hongxinj91@gmail.com  
 
 ---
 
 #### 📱 Social Media
-- 🐦 Twitter: @jhxer_7(https://twitter.com/jhxer_7)
+- 🐦 Twitter: @jhxer_7  
+(https://twitter.com/jhxer_7)
 - 📸 Instagram: Jiang_7
-- ✈️ Telegram: 同手机号(+86)...
+- ✈️ Telegram: 同手机号  
+(+86)...
 
 ----
 
@@ -43,10 +49,11 @@
 
 ----
 
-#### 🔍 Research Interests
+#### 🔍 What I'm Exploring
 - 后端系统设计（Java / Spring Boot）
 - 数据库开发（MySQL / Redis）
-- 网络协议与代理工具配置（本人IOS系统上使用Loon，Windows上使用Clash Verge）
+- 网络协议与代理工具配置  
+(本人IOS系统上使用Loon，Windows上使用Clash Verge)
 - Python 数据分析与可视化
 - 永远在学习中……Keep Learning 📚
 
