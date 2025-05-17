@@ -1,7 +1,7 @@
 <!-- 顶部头像介绍块 -->
 
 <h1 id="hello-title" class="typewriter"
-    style="text-align: center; font-size: 2.2rem; color: #333; margin-top: -100px; margin-bottom: 0.5rem;">
+    style="text-align: center; font-size: 2.2rem; color: #333; margin-top: -50px; margin-bottom: 0.5rem;">
   👋Hello, 我是 <strong style="color:#2937f0;">江宏鑫</strong>
 </h1>
 
