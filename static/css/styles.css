@@ -10912,6 +10912,37 @@ footer a:hover, footer a:active, footer a:focus {
   text-decoration: underline;
 }
 
+/* ========== 手机端 (<768px) 专属调整 ========== */
+@media screen and (max-width: 767.98px) {
+  /* 1. 头像自适应 */
+  .text-center img {
+    margin-top: -40px; /* 改小 */
+    width: 100px;      /* 改小 */
+  }
+
+  /* 2. Container 内边距 */
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* 3. Section 上下留白 */
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* 4. 标题和正文区微调 */
+  .top-section-content h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .main-body {
+    padding: 1rem !important;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
 
 
 

@@ -3,24 +3,30 @@
 
 :root{
     --h-title-color:#3948d2;
+    --primary-blue:#2937f0;
 }
 
 .header {
-    border-bottom: solid 2px var(--bs-blue);
+    border-bottom: solid 2px var(--primary-blue);
     z-index: 10000;
 }
 
 .bg-bottom {
-    background-color: var(--h-title-color);
+    background-color: var(--primary-blue);
 }
 
-.top-section {
-    position: relative;
-    padding: 10rem 0;
-    background-position: center;
-    background-size: cover;
-    height: 25rem;
+.top-section{
+  position:relative;
+  padding:10rem 0;
+  height:25rem;
+
+  /* --- 新写法：渐变 + 纯色 + 图片 --- */
+  background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url('../assets/img/background.jpeg') center/cover,
+    #2937f0;   /* 兜底纯色 */
 }
+
 
 .top-section h2 {
     font-weight: 400;
@@ -43,7 +49,7 @@
 
 section header h2{
     font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-    color: var(--h-title-color);
+    color: var(--primary-blue);
     font-size: 2.3rem;
     line-height: 4rem;
 }
@@ -90,27 +96,6 @@ section .main-body {
 }
 
 
-#avatar {
-    position: relative;
-    height: 0;
-    top:min(-65px,max(-100px,calc(-1*100vw/12)));
-    max-width: 55em;
-    margin: 0 1.5rem 0 0;
-    float: right;
-    z-index: 9000;
-}
-
-#avatar img {
-    height: max(130px,min(200px,calc(100vw/6)));
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 991px) {
-    #avatar {
-        margin: 0;
-    }
-}
-
 .content-card {
   background: white;
   border-radius: 16px;
@@ -137,4 +122,17 @@ body {
   font-weight: 600;
   margin: 2rem 0 1rem 0;
   color: #2937f0;
+}
+
+/* ===== 新版头像 ===== */
+.avatar-img{           /* 保持和 HTML class 一致 */
+  width:140px;
+  border-radius:50%;
+  border:4px solid #fff;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+  transform:translateY(-50%);     /* 盖住封面底边 */
+  transition:transform .3s ease;
+}
+.avatar-img:hover{
+  transform:translateY(-50%) scale(1.06) rotate(3deg);
 }
