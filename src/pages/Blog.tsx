@@ -5,7 +5,7 @@ import remarkGfm from "remark-gfm";
 import { SectionHeading } from "../components/SectionHeading";
 import { getPaginatedPosts, getPostBySlug } from "../lib/blog";
 
-const PAGE_SIZE = 1;
+const PAGE_SIZE = 3;
 
 export function Blog() {
   const { slug } = useParams();
@@ -27,8 +27,8 @@ function BlogList() {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="Blog"
-          title="Markdown 驱动的技术笔记"
-          description="文章以 Markdown 文件维护，列表、分页和详情页由内容管线自动生成，后续可以直接添加新的 .md 文件扩展。"
+          title="记录"
+          description="一些学习笔记、项目复盘和临时想法。现在先放两篇示例笔记，后面会慢慢补真实内容。"
         />
 
         <div className="grid gap-5">
@@ -44,7 +44,7 @@ function BlogList() {
                   {post.readingTime} min read
                 </span>
               </div>
-              <h2 className="mt-4 text-3xl font-semibold text-zinc-950 dark:text-white">{post.title}</h2>
+              <h2 className="mt-4 text-2xl font-semibold text-zinc-950 dark:text-white">{post.title}</h2>
               <p className="mt-4 text-base leading-8 text-zinc-600 dark:text-zinc-300">{post.excerpt}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {post.tags.map((tag) => (
@@ -53,8 +53,8 @@ function BlogList() {
                   </span>
                 ))}
               </div>
-              <Link to={`/blog/${post.slug}`} className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-cyan-700 dark:text-cyan">
-                阅读全文
+              <Link to={`/blog/${post.slug}`} className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-zinc-800 hover:text-cyan-700 dark:text-zinc-100 dark:hover:text-cyan">
+                阅读
                 <ArrowRight size={16} />
               </Link>
             </article>
@@ -86,11 +86,11 @@ function PaginationLink({
     direction === "prev" ? (
       <>
         <ArrowLeft size={16} />
-        上一篇
+        上一页
       </>
     ) : (
       <>
-        下一篇
+        下一页
         <ArrowRight size={16} />
       </>
     );
@@ -133,7 +133,7 @@ function BlogDetail({ slug }: { slug: string }) {
             <span>{post.date}</span>
             <span>{post.readingTime} min read</span>
           </div>
-          <h1 className="mt-4 text-4xl font-semibold leading-tight text-zinc-950 dark:text-white md:text-6xl">
+          <h1 className="mt-4 text-3xl font-semibold leading-tight text-zinc-950 dark:text-white md:text-4xl">
             {post.title}
           </h1>
           <p className="mt-5 text-lg leading-8 text-zinc-600 dark:text-zinc-300">{post.excerpt}</p>

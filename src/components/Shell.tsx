@@ -5,7 +5,7 @@ import { navItems, profile } from "../data/profile";
 
 export function Shell({ children }: PropsWithChildren) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [dark, setDark] = useState(() => localStorage.getItem("theme") !== "light");
+  const [dark, setDark] = useState(() => localStorage.getItem("theme") === "dark");
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
@@ -13,17 +13,17 @@ export function Shell({ children }: PropsWithChildren) {
   }, [dark]);
 
   return (
-    <div className="min-h-screen bg-[#F7F5EF] text-zinc-900 transition-colors duration-300 dark:bg-ink dark:text-white">
+    <div className="min-h-screen bg-[#FAF9F5] text-zinc-900 transition-colors duration-300 dark:bg-ink dark:text-white">
       <div className="site-gradient fixed inset-0 -z-10" />
-      <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-[#F7F5EF]/86 backdrop-blur-xl dark:border-white/10 dark:bg-ink/78">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
+      <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/90 backdrop-blur dark:border-white/10 dark:bg-[#111318]/95">
+        <nav className="mx-auto flex max-w-5xl items-center justify-between px-5 py-4 md:px-8">
           <NavLink to="/" className="group flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-            <span className="grid h-10 w-10 place-items-center rounded-lg border border-zinc-950 bg-zinc-950 text-sm font-bold text-white shadow-sm transition group-hover:border-cyan-500 dark:border-white dark:bg-white dark:text-zinc-950">
+            <span className="grid h-9 w-9 place-items-center rounded-lg border border-zinc-300 bg-white text-sm font-semibold text-zinc-900 transition group-hover:border-zinc-500 dark:border-white/15 dark:bg-white/8 dark:text-white">
               JH
             </span>
             <span>
-              <span className="block text-sm font-semibold">{profile.brandName}</span>
-              <span className="block text-xs text-zinc-500 dark:text-zinc-400">Backend / AI</span>
+              <span className="block text-sm font-semibold">{profile.name}</span>
+              <span className="block text-xs text-zinc-500 dark:text-zinc-400">{profile.englishName}</span>
             </span>
           </NavLink>
 
@@ -33,9 +33,9 @@ export function Shell({ children }: PropsWithChildren) {
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `rounded-lg px-4 py-2 text-sm font-medium transition ${
+                  `rounded-lg px-3 py-2 text-sm font-medium transition ${
                     isActive
-                      ? "bg-zinc-950 text-white dark:bg-white dark:text-zinc-950"
+                      ? "bg-zinc-900 text-white dark:bg-white dark:text-zinc-950"
                       : "text-zinc-600 hover:bg-zinc-900/5 hover:text-zinc-950 dark:text-zinc-300 dark:hover:bg-white/10 dark:hover:text-white"
                   }`
                 }
@@ -87,7 +87,7 @@ export function Shell({ children }: PropsWithChildren) {
         </nav>
 
         {menuOpen ? (
-          <div className="border-t border-zinc-200 bg-[#F7F5EF] px-5 py-4 dark:border-white/10 dark:bg-ink md:hidden">
+          <div className="border-t border-zinc-200 bg-[#FAF9F5] px-5 py-4 dark:border-white/10 dark:bg-ink md:hidden">
             <div className="grid gap-2">
               {navItems.map((item) => (
                 <NavLink
@@ -97,7 +97,7 @@ export function Shell({ children }: PropsWithChildren) {
                   className={({ isActive }) =>
                     `rounded-lg px-4 py-3 text-sm font-medium ${
                       isActive
-                        ? "bg-zinc-950 text-white dark:bg-white dark:text-zinc-950"
+                        ? "bg-zinc-900 text-white dark:bg-white dark:text-zinc-950"
                         : "bg-white/70 text-zinc-700 dark:bg-white/8 dark:text-zinc-200"
                     }`
                   }
@@ -105,7 +105,7 @@ export function Shell({ children }: PropsWithChildren) {
                   {item.label}
                 </NavLink>
               ))}
-              <a className="rounded-lg bg-zinc-950 px-4 py-3 text-sm font-medium text-white" href={profile.github}>
+              <a className="rounded-lg bg-zinc-900 px-4 py-3 text-sm font-medium text-white" href={profile.github}>
                 GitHub
               </a>
             </div>
@@ -116,7 +116,7 @@ export function Shell({ children }: PropsWithChildren) {
       <main>{children}</main>
 
       <footer className="border-t border-zinc-200/80 px-5 py-10 text-sm text-zinc-500 dark:border-white/10 dark:text-zinc-400">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-5xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p>© 2026 {profile.englishName}. Built with React, TypeScript and Tailwind CSS.</p>
           <div className="flex gap-4">
             <a href={profile.github} target="_blank" rel="noreferrer" className="hover:text-cyan-500">

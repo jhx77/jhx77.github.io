@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Shell } from "./components/Shell";
+import { About } from "./pages/About";
 import { Blog } from "./pages/Blog";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
@@ -10,6 +11,7 @@ export default function App() {
     <Shell>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<Blog />} />

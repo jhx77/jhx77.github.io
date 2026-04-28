@@ -8,8 +8,8 @@ export function Contact() {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="Contact"
-          title="保持具体、直接、可继续推进"
-          description="无论是实习机会、项目交流，还是对后端与 AI 应用工程的讨论，都欢迎用一个具体问题开始。"
+          title="联系我"
+          description="如果你想交流项目、学习笔记或者实习相关信息，可以通过下面的方式联系我。"
         />
 
         <div className="grid gap-5 md:grid-cols-2">

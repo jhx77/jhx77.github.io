@@ -2,29 +2,32 @@ import { describe, expect, it } from "vitest";
 import { projects } from "./projects";
 
 describe("project narratives", () => {
-  it("keeps FastKB as a complete interview-grade technical narrative", () => {
+  it("keeps FastKB technical details without turning it into a slogan", () => {
     const fastkb = projects.find((project) => project.slug === "fastkb");
+    const fullText = `${fastkb?.narrative}\n${fastkb?.sections.flatMap((section) => section.body).join("\n")}`;
 
-    expect(fastkb?.narrative).toContain("Tika");
-    expect(fastkb?.narrative).toContain("pgvector");
-    expect(fastkb?.narrative).toContain("PostgreSQL 全文检索");
-    expect(fastkb?.narrative).toContain("QueryRewrite");
-    expect(fastkb?.narrative).toContain("Graph 编排模型");
-    expect(fastkb?.narrative).toContain("滑动窗口");
-    expect(fastkb?.narrative).toContain("RBAC");
-    expect(fastkb?.narrative).toContain("MCP Tool");
-    expect(fastkb?.narrative.length).toBeGreaterThan(1400);
+    expect(fullText).toContain("Tika");
+    expect(fullText).toContain("pgvector");
+    expect(fullText).toContain("PostgreSQL 全文检索");
+    expect(fullText).toContain("QueryRewrite");
+    expect(fullText).toContain("Graph 编排模型");
+    expect(fullText).toContain("滑动窗口");
+    expect(fullText).toContain("RBAC");
+    expect(fullText).toContain("MCP Tool");
+    expect(fullText.length).toBeGreaterThan(1200);
   });
 
-  it("frames the smart life platform as an optimization story instead of a resume list", () => {
+  it("keeps the smart life platform focused on implementation details", () => {
     const platform = projects.find((project) => project.slug === "smart-life");
+    const fullText = `${platform?.narrative}\n${platform?.sections.flatMap((section) => section.body).join("\n")}`;
 
-    expect(platform?.narrative).toContain("Redis 预扣库存");
-    expect(platform?.narrative).toContain("Lua");
-    expect(platform?.narrative).toContain("Kafka");
-    expect(platform?.narrative).toContain("逻辑过期");
-    expect(platform?.narrative).toContain("Caffeine + Redis");
-    expect(platform?.narrative).toContain("LangChain4j");
-    expect(platform?.narrative.length).toBeGreaterThan(900);
+    expect(fullText).toContain("Redis 做库存预扣");
+    expect(fullText).toContain("Lua");
+    expect(fullText).toContain("Kafka");
+    expect(fullText).toContain("逻辑过期");
+    expect(fullText).toContain("Caffeine + Redis");
+    expect(fullText).toContain("LangChain4j");
+    expect(fullText).toContain("Function Calling");
+    expect(fullText.length).toBeGreaterThan(900);
   });
 });

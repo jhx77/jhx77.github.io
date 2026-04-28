@@ -3,3 +3,6 @@ dist
 .DS_Store
 .env.local
 *.tsbuildinfo
+package-lock.json
+home-desktop.png
+projects-mobile.png

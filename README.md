@@ -1,10 +1,14 @@
-# Jiang Hongxin Personal Site
+# Jiang Hongxin Blog
 
-This repository powers [jhx77.github.io](https://jhx77.github.io/), a personal brand website rebuilt from the previous academic template into a Vite, React, TypeScript and Tailwind CSS application.
+This repository powers [jhx77.github.io](https://jhx77.github.io/), a simple personal homepage and blog built with Vite, React, TypeScript and Tailwind CSS.
 
-## What changed
+## Structure
 
-The site is now structured around four main routes: home, project narratives, Markdown blog and contact. The project page is written as interview-grade engineering storytelling, with FastKB and the smart life platform described through background, core constraints, architecture decisions and system-level trade-offs.
+- Home
+- About
+- Projects
+- Blog
+- Contact
 
 ## Tech stack
 
@@ -12,8 +16,8 @@ The site is now structured around four main routes: home, project narratives, Ma
 - React
 - TypeScript
 - Tailwind CSS
-- React Router HashRouter for GitHub Pages stability
-- Markdown blog posts imported through Vite raw content modules
+- React Router HashRouter for GitHub Pages
+- Markdown posts imported through Vite raw content modules
 - GitHub Actions deployment to GitHub Pages
 
 ## Local development

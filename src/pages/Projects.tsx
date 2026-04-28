@@ -1,61 +1,57 @@
-import { ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "../components/SectionHeading";
 import { projects } from "../data/projects";
 
 export function Projects() {
   return (
-    <section className="px-5 py-16 md:px-8 md:py-24">
-      <div className="mx-auto max-w-7xl">
+    <section className="px-5 py-14 md:px-8 md:py-20">
+      <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="Projects"
-          title="项目经历：从技术名词到工程叙事"
-          description="这里保留面试时真正有价值的信息：为什么做、难点在哪里、系统怎么拆、取舍是什么，以及最后解决了什么问题。"
+          title="项目经历"
+          description="这里保留一些项目的背景、实现过程和遇到的问题，语气尽量写得接近真实开发记录。"
         />
 
-        <div className="space-y-10">
-          {projects.map((project, index) => (
+        <div className="space-y-12">
+          {projects.map((project) => (
             <article className="project-article" key={project.slug}>
-              <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
-                <aside className="project-side">
-                  <p className="text-sm font-semibold uppercase tracking-[0.26em] text-cyan-600 dark:text-cyan">
-                    Case {String(index + 1).padStart(2, "0")}
-                  </p>
-                  <h2 className="mt-4 text-3xl font-semibold text-zinc-950 dark:text-white md:text-4xl">
-                    {project.title}
-                  </h2>
-                  <p className="mt-4 text-base leading-7 text-zinc-600 dark:text-zinc-300">{project.subtitle}</p>
-                  <div className="mt-6 grid gap-3 text-sm text-zinc-500 dark:text-zinc-400">
-                    <span>{project.period}</span>
-                    <span>{project.role}</span>
-                  </div>
-                  <div className="mt-6 flex flex-wrap gap-2">
-                    {project.keywords.map((keyword) => (
-                      <span className="tag" key={keyword}>
-                        {keyword}
-                      </span>
-                    ))}
-                  </div>
-                </aside>
-
-                <div>
-                  <div className="narrative">
-                    {project.narrative.split("\n\n").map((paragraph) => (
-                      <p key={paragraph.slice(0, 32)}>{paragraph}</p>
-                    ))}
-                  </div>
-
-                  <div className="mt-8 grid gap-4 md:grid-cols-3">
-                    {project.engineeringLens.map((lens) => (
-                      <section className="lens-card" key={lens.title}>
-                        <div className="flex items-center justify-between gap-3">
-                          <h3>{lens.title}</h3>
-                          <ArrowUpRight size={17} />
-                        </div>
-                        <p>{lens.body}</p>
-                      </section>
-                    ))}
-                  </div>
+              <header className="max-w-3xl">
+                <div className="flex flex-wrap gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+                  <span>{project.period}</span>
+                  <span>·</span>
+                  <span>{project.role}</span>
                 </div>
+                <h2 className="mt-3 text-2xl font-semibold text-zinc-950 dark:text-white md:text-3xl">
+                  {project.title}
+                </h2>
+                <div className="mt-4 space-y-3">
+                  {project.narrative.split("\n\n").map((paragraph) => (
+                    <p className="text-base leading-8 text-zinc-600 dark:text-zinc-300" key={paragraph.slice(0, 32)}>
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {project.stack.map((tech) => (
+                    <span className="tag" key={tech}>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </header>
+
+              <div className="mt-8 grid gap-4">
+                {project.sections.map((section) => (
+                  <section className="content-card" key={section.title}>
+                    <h3 className="text-lg font-semibold text-zinc-950 dark:text-white">{section.title}</h3>
+                    <div className="mt-3 space-y-3">
+                      {section.body.map((paragraph) => (
+                        <p className="text-sm leading-7 text-zinc-600 dark:text-zinc-300" key={paragraph.slice(0, 32)}>
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  </section>
+                ))}
               </div>
             </article>
           ))}

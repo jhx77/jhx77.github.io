@@ -8,7 +8,7 @@ describe("blog content pipeline", () => {
     expect(posts).toHaveLength(2);
     expect(posts[0]).toMatchObject({
       slug: "rag-hybrid-retrieval",
-      title: "RAG 为什么需要混合检索"
+      title: "示例笔记：RAG 为什么需要混合检索"
     });
     expect(posts[0].content).toContain("QueryRewrite");
     expect(posts[1].slug).toBe("seckill-cache-consistency");

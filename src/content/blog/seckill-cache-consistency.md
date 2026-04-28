@@ -1,7 +1,7 @@
 ---
-title: "秒杀系统里的缓存与一致性边界"
+title: "示例笔记：秒杀系统里的缓存与一致性边界"
 date: "2026-04-12"
-excerpt: "秒杀不是简单地把请求扔给 Redis，而是要把库存、订单、支付和补偿拆成可以收敛的状态流。"
+excerpt: "一篇示例笔记：整理秒杀链路里 Redis、Kafka、订单状态和补偿任务之间的关系。"
 tags: "Redis, Lua, Kafka, Cache, Consistency"
 ---
 

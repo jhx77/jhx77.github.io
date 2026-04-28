@@ -1,7 +1,7 @@
 ---
-title: "RAG 为什么需要混合检索"
+title: "示例笔记：RAG 为什么需要混合检索"
 date: "2026-04-20"
-excerpt: "企业知识问答里，向量检索负责理解语义，但事实锚点往往来自全文检索、权限过滤和查询改写。"
+excerpt: "一篇示例笔记：记录我对向量检索、全文检索、权限过滤和查询改写的一些理解。"
 tags: "RAG, pgvector, PostgreSQL, QueryRewrite"
 ---
 
