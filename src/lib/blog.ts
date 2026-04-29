@@ -2,6 +2,7 @@ export type BlogPost = {
   slug: string;
   title: string;
   date: string;
+  summary: string;
   excerpt: string;
   tags: string[];
   content: string;
@@ -11,7 +12,7 @@ export type BlogPost = {
 type Frontmatter = {
   title: string;
   date: string;
-  excerpt: string;
+  summary: string;
   tags: string[];
 };
 
@@ -42,7 +43,7 @@ function parseFrontmatter(raw: string): { metadata: Frontmatter; content: string
     metadata: {
       title: entries.title,
       date: entries.date,
-      excerpt: entries.excerpt,
+      summary: entries.summary ?? entries.excerpt,
       tags: entries.tags ? entries.tags.split(",").map((tag) => tag.trim()) : []
     },
     content: match[2].trim()
@@ -65,6 +66,7 @@ export function getBlogPosts(): BlogPost[] {
       return {
         slug: getSlugFromPath(path),
         ...metadata,
+        excerpt: metadata.summary,
         content,
         readingTime: estimateReadingTime(content)
       };
