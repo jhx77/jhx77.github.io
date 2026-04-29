@@ -79,6 +79,53 @@ a {
   color: #f8fafc;
 }
 
+.home-button {
+  min-height: 42px;
+  border-radius: 0.625rem;
+  padding: 0.72rem 0.95rem;
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease,
+    background 140ms ease,
+    color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.home-button.primary-button {
+  background: #27272a;
+  box-shadow: 0 1px 2px rgba(24, 24, 27, 0.08);
+}
+
+.home-button.secondary-button {
+  border-color: rgba(39, 39, 42, 0.12);
+  background: rgba(255, 255, 255, 0.66);
+  color: #27272a;
+}
+
+.home-button:hover {
+  transform: translateY(-0.5px);
+}
+
+.home-button.primary-button:hover {
+  background: #1f1f23;
+}
+
+.home-button.secondary-button:hover {
+  border-color: rgba(39, 39, 42, 0.18);
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.dark .home-button.secondary-button {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.075);
+  color: #f4f4f5;
+}
+
+.dark .home-button.secondary-button:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.11);
+}
+
 .light-button {
   background: #ffffff;
   color: #09090b;
@@ -130,6 +177,21 @@ a {
 
 .content-card {
   padding: 1.5rem;
+}
+
+.home-about-card {
+  padding: 1.25rem;
+  border-color: rgba(39, 39, 42, 0.1);
+  background: rgba(255, 255, 255, 0.66);
+  box-shadow: 0 8px 22px rgba(24, 24, 27, 0.035);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.dark .home-about-card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: none;
 }
 
 .tag {

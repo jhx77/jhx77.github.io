@@ -5,8 +5,8 @@ export const profile = {
   school: "浙江水利水电学院 · 物联网工程",
   location: "Hangzhou, China",
   github: "https://github.com/jhx77",
-  avatar: "https://avatars.githubusercontent.com/u/148064648?v=4",
-  emails: ["hongxinjiang@qq.com", "hongxinj91@gmail.com"],
+  avatar: "/images/avatar.png",
+  emails: ["hongxin_jiang@qq.com", "hongxinj91@gmail.com"],
   social: {
     twitter: "https://twitter.com/jhxer_7",
     instagram: "Jiang_7"

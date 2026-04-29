@@ -15,12 +15,14 @@ export function Shell({ children }: PropsWithChildren) {
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-zinc-900 transition-colors duration-300 dark:bg-ink dark:text-white">
       <div className="site-gradient fixed inset-0 -z-10" />
-      <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/90 backdrop-blur dark:border-white/10 dark:bg-[#111318]/95">
+      <header className="sticky top-0 z-50 border-b border-zinc-200/60 bg-white/80 backdrop-blur-sm dark:border-white/10 dark:bg-[#111318]/90">
         <nav className="mx-auto flex max-w-5xl items-center justify-between px-5 py-4 md:px-8">
           <NavLink to="/" className="group flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-            <span className="grid h-9 w-9 place-items-center rounded-lg border border-zinc-300 bg-white text-sm font-semibold text-zinc-900 transition group-hover:border-zinc-500 dark:border-white/15 dark:bg-white/8 dark:text-white">
-              JH
-            </span>
+            <img
+              src={profile.avatar}
+              alt={profile.name}
+              className="h-9 w-9 rounded-full border border-zinc-200/80 object-cover shadow-sm transition group-hover:border-zinc-300 dark:border-white/15"
+            />
             <span>
               <span className="block text-sm font-semibold">{profile.name}</span>
               <span className="block text-xs text-zinc-500 dark:text-zinc-400">{profile.englishName}</span>

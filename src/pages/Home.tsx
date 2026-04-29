@@ -10,24 +10,24 @@ export function Home() {
 
   return (
     <>
-      <section className="px-5 py-14 md:px-8 md:py-20">
+      <section className="px-5 py-10 md:px-8 md:py-14">
         <div className="mx-auto max-w-5xl">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">{profile.englishName}</p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-normal text-zinc-950 dark:text-white md:text-5xl">
+          <h1 className="mt-3 text-4xl font-semibold tracking-normal text-zinc-950 dark:text-white md:text-5xl">
             {profile.name}
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-zinc-600 dark:text-zinc-300 md:text-lg">
+          <p className="mt-4 max-w-2xl text-base leading-8 text-zinc-600 dark:text-zinc-300 md:text-lg">
             物联网工程本科生，正在学习 Java 后端开发，也会在这里记录一些学习、项目和生活中的思考。
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/blog" className="primary-button">
+          <div className="mt-6 flex flex-wrap gap-2.5">
+            <Link to="/blog" className="primary-button home-button">
               最近写的东西
               <ArrowRight size={17} />
             </Link>
-            <Link to="/projects" className="secondary-button">
+            <Link to="/projects" className="secondary-button home-button">
               项目经历
             </Link>
-            <a href={profile.github} target="_blank" rel="noreferrer" className="secondary-button">
+            <a href={profile.github} target="_blank" rel="noreferrer" className="secondary-button home-button">
               <Github size={17} />
               GitHub
             </a>
@@ -35,10 +35,10 @@ export function Home() {
         </div>
       </section>
 
-      <section id="about" className="px-5 py-12 md:px-8 md:py-16">
+      <section id="about" className="px-5 py-8 md:px-8 md:py-10">
         <div className="mx-auto max-w-5xl">
           <SectionHeading eyebrow="About" title="About Me" />
-          <div className="content-card max-w-3xl">
+          <div className="content-card home-about-card max-w-3xl">
             <p className="text-base leading-8 text-zinc-700 dark:text-zinc-300">
               你好，我是江宏鑫，目前是浙江水利水电学院物联网工程专业本科生。最近主要在学习 Java
               后端开发、数据库、Redis、RAG 和一些 AI 应用相关内容。这个网站主要用来记录学习过程、项目经历和一些个人想法。
