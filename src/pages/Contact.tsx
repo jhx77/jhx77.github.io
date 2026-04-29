@@ -9,7 +9,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Contact"
           title="联系我"
-          description="如果你想交流项目、学习笔记或者实习相关信息，可以通过下面的方式联系我。"
+          description="如果想交流项目、学习笔记或者实习相关信息，可以从这里找到我。"
         />
 
         <div className="grid gap-5 md:grid-cols-2">

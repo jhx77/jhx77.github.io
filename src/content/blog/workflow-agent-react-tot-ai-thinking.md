@@ -1,7 +1,7 @@
 ---
 title: "从 Workflow、Agent 到 AI 的快思慢想"
 date: "2026-04-05"
-summary: "围绕 Workflow、Agent、ReAct、Tree of Thoughts 和 AI 协作方式的一些阶段性理解。"
+summary: "整理一些最近对 Workflow、Agent、ReAct 和 AI 协作方式的理解。比起把 AI 想成一个万能模型，我更愿意把它看成一套逐渐成型的任务系统。"
 tags: "AI, Agent, Workflow, ReAct, Thinking"
 ---
 

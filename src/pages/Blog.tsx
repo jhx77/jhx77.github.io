@@ -28,7 +28,7 @@ function BlogList() {
         <SectionHeading
           eyebrow="Blog"
           title="记录"
-          description="一些学习笔记、项目复盘和阶段性的技术思考。"
+          description="写一点学习笔记、项目复盘，也写一些阶段性的想法。"
         />
 
         <div className="grid gap-5">

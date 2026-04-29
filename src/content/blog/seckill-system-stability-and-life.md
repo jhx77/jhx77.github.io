@@ -1,7 +1,7 @@
 ---
 title: "秒杀系统：高并发背后的秩序感"
 date: "2025-08-06"
-summary: "基于智荐生活平台项目，复盘秒杀、缓存、异步削峰、订单状态和智能客服的一些后端设计。"
+summary: "从 Redis、Lua、Kafka 和缓存设计聊起，整理我对秒杀系统稳定性的理解，也顺便写一点关于秩序和节奏的想法。"
 tags: "Seckill, Redis, Kafka, Cache, Backend"
 ---
 

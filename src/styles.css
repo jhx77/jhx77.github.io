@@ -62,7 +62,7 @@ a {
 .light-button:hover,
 .pagination-button:hover,
 .contact-card:hover {
-  transform: translateY(-1px);
+  transform: translateY(-0.5px);
 }
 
 .secondary-button,
@@ -161,10 +161,11 @@ a {
   border-radius: 0.5rem;
   border: 1px solid rgba(39, 39, 42, 0.12);
   background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 10px 24px rgba(24, 24, 27, 0.05);
+  box-shadow: 0 8px 22px rgba(24, 24, 27, 0.04);
   transition:
     transform 180ms ease,
     border-color 180ms ease,
+    background 180ms ease,
     box-shadow 180ms ease;
 }
 
@@ -177,6 +178,18 @@ a {
 
 .content-card {
   padding: 1.5rem;
+}
+
+.content-card:hover {
+  border-color: rgba(39, 39, 42, 0.18);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 28px rgba(24, 24, 27, 0.055);
+}
+
+.dark .content-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.075);
+  box-shadow: none;
 }
 
 .home-about-card {
@@ -198,18 +211,34 @@ a {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
-  border: 1px solid rgba(14, 116, 144, 0.22);
-  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(63, 63, 70, 0.14);
+  background: rgba(255, 255, 255, 0.7);
   padding: 0.34rem 0.62rem;
   font-size: 0.76rem;
   font-weight: 500;
   color: #3f3f46;
+  transition:
+    border-color 140ms ease,
+    background 140ms ease,
+    color 140ms ease;
+}
+
+.tag:hover {
+  border-color: rgba(63, 63, 70, 0.22);
+  background: rgba(255, 255, 255, 0.86);
+  color: #27272a;
 }
 
 .dark .tag {
   border-color: rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.07);
   color: #d4d4d8;
+}
+
+.dark .tag:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f4f4f5;
 }
 
 .project-article {

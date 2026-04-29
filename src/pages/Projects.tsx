@@ -20,7 +20,7 @@ function ProjectList() {
         <SectionHeading
           eyebrow="Projects"
           title="项目经历"
-          description="一些项目的背景、实现过程和复盘，列表先保留概要，细节放在详情里慢慢展开。"
+          description="把最近做过的两个项目整理了一下，主要留给自己复盘。"
         />
 
         <div className="grid gap-5">

@@ -37,7 +37,7 @@ export const projects: Project[] = [
     slug: "fastkb",
     title: "FastKB 企业私有 AI 平台",
     summary:
-      "面向企业私有知识问答与智能体工作流场景，参与 RAG 知识入库、检索增强对话、Workflow 编排、AI 会话记忆和权限治理等模块。",
+      "面向企业知识问答和智能体工作流场景，主要参与 RAG 知识入库、检索增强对话、Workflow 编排、会话记忆和权限治理等模块。",
     period: "2025.10 - 2026.03",
     role: "AI 应用后端开发实习生",
     stack: [
@@ -52,9 +52,8 @@ export const projects: Project[] = [
       "MCP Tool"
     ],
     highlights: [
-      "围绕企业内部知识问答，处理文档入库、分块、向量化、混合检索和多知识库 TopK 召回。",
-      "基于 Graph 编排 Workflow 节点、边与状态流转，支持个性化节点组装与流式执行。",
-      "实现滑动窗口 + 摘要的短期记忆，并通过策略-工厂模式统一多厂商模型调用入口。"
+      "这个项目里，我对 RAG 从文件处理到检索召回的链路有了更完整的认识。",
+      "Workflow、会话记忆和权限治理这些部分，也让我更清楚 AI 应用落地时需要处理哪些边界。"
     ],
     sections: [
       {
@@ -135,7 +134,7 @@ export const projects: Project[] = [
     slug: "zhijian-life",
     title: "智荐生活平台",
     summary:
-      "一个综合生活服务平台，包含商家信息查询、优惠券秒杀、智能客服等功能，重点围绕高并发秒杀链路、缓存一致性和智能客服做后端实现。",
+      "一个生活服务类后端项目，包含商家查询、优惠券秒杀和智能客服等功能，重点围绕秒杀链路、缓存一致性和异步处理做实现。",
     period: "2025.07 - 2025.09",
     role: "Java 后端开发",
     stack: [
@@ -149,9 +148,8 @@ export const projects: Project[] = [
       "Function Calling"
     ],
     highlights: [
-      "使用 Redis 预减库存 + Lua 脚本原子操作处理秒杀防超卖和一人一单判断。",
-      "通过 Kafka 异步处理库存扣减与订单生成，并围绕缓存击穿、穿透和热点访问做优化。",
-      "接入阿里云百炼大平台模型，结合 LangChain4j、Redis 会话上下文和 Function Calling 实现智能客服。"
+      "秒杀部分主要围绕库存预扣、异步下单和订单状态流转展开。",
+      "缓存和智能客服相关实现，则让我补了一些高频读取和业务工具调用的实践经验。"
     ],
     sections: [
       {

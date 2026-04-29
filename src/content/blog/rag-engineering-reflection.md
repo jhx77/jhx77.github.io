@@ -1,7 +1,7 @@
 ---
 title: "对于 RAG 技术的一些工程思考"
 date: "2025-11-03"
-summary: "从文档入库、分块、Query Rewriting、混合检索、RRF 到 rerank，整理我对 RAG 落地的理解。"
+summary: "从文档解析、分块、QueryRewrite 到混合检索，整理我对 RAG 工程落地的一些理解。"
 tags: "RAG, pgvector, PostgreSQL, QueryRewrite, Rerank"
 ---
 

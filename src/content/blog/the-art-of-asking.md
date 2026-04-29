@@ -1,7 +1,7 @@
 ---
 title: "The art of asking"
 date: "2026-01-19"
-summary: "对 prompt、提问能力和 AI 交互方式的一些思考。"
+summary: "关于 prompt、提问能力和 AI 交互的一些思考。很多时候，问题没有被解决，不是因为没有答案，而是因为问题还没有被问清楚。"
 tags: "AI, Prompt, Thinking, Methodology"
 ---
 

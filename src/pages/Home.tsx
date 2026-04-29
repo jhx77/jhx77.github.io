@@ -17,7 +17,7 @@ export function Home() {
             {profile.name}
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-8 text-zinc-600 dark:text-zinc-300 md:text-lg">
-            物联网工程本科生，正在学习 Java 后端开发，也会在这里记录一些学习、项目和生活中的思考。
+            物联网工程本科生，正在学习 Java 后端开发。本小站用来记录一些项目、学习笔记和生活里的想法。
           </p>
           <div className="mt-6 flex flex-wrap gap-2.5">
             <Link to="/blog" className="primary-button home-button">
@@ -62,7 +62,7 @@ export function Home() {
 
       <section className="px-5 py-12 md:px-8 md:py-16">
         <div className="mx-auto max-w-5xl">
-          <SectionHeading eyebrow="Projects" title="项目经历" description="首页只放简短介绍，详细内容放在项目页。" />
+          <SectionHeading eyebrow="Projects" title="项目经历" description="整理几个最近做过的阶段性项目，记录一些实现思路和复盘。" />
           <div className="grid gap-4 md:grid-cols-2">
             {projects.map((project) => (
               <article className="content-card" key={project.slug}>
@@ -87,7 +87,7 @@ export function Home() {
 
       <section className="px-5 py-12 md:px-8 md:py-16">
         <div className="mx-auto max-w-5xl">
-          <SectionHeading eyebrow="Blog" title="最近写的东西" description="这里会放一些学习记录、项目复盘和日常想法。" />
+          <SectionHeading eyebrow="Blog" title="最近写的东西" description="写一点学习笔记、项目复盘，也写一些阶段性的想法。" />
           <div className="grid gap-4">
             {recentPosts.map((post) => (
               <article className="content-card" key={post.slug}>
@@ -110,7 +110,7 @@ export function Home() {
 
       <section className="px-5 py-12 md:px-8 md:py-16">
         <div className="mx-auto max-w-5xl">
-          <SectionHeading eyebrow="Contact" title="联系我" description="可以通过下面这些方式找到我。" />
+          <SectionHeading eyebrow="Contact" title="联系我" description="欢迎交流项目、学习或实习相关的内容。" />
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <a href={profile.github} target="_blank" rel="noreferrer" className="contact-card">
               <Github size={20} />
